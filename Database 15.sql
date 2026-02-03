@@ -51,3 +51,16 @@ Select * From Armor;
 
 -- 백업하는 방법
 -- 테이블 우클릭 -> Table Data Export Wizard
+
+
+
+-- price가 1000 이하 그리고 armorType 1,2 
+Delete From Armor Where price<=1000 And armorType In(1,2);
+Select * From Armor;
+
+-- armorID가 5010~5019인 데이터를 모두 삭제
+Delete From Armor Where armorID Between 5010 And 5019;
+
+Select * From Armor;
+
+
